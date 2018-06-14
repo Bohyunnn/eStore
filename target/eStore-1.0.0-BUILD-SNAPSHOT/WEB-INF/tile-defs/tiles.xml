@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="base" template="/WEB-INF/template/layout.jsp">
+		<put-attribute name="title" value="eStore homepage:)" />
+		<put-attribute name="menu" value="/WEB-INF/template/menu.jsp" />
+		<!-- body는 상속으로 -->
+		<put-attribute name="footer" value="/WEB-INF/template/footer.jsp" />
+	</definition>
+
+	<definition name="home" extends="base">
+		<put-attribute name="title" value="My eStore homepage:-)" />
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition>
+
+	<definition name="products" extends="base">
+		<put-attribute name="title" value="eStore Rroducts :D" />
+		<put-attribute name="body" value="/WEB-INF/views/products.jsp" />
+	</definition>
+
+	<definition name="admin" extends="base">
+		<put-attribute name="title" value="Admin Page :J" />
+		<put-attribute name="body" value="/WEB-INF/views/admin.jsp" />
+	</definition>
+
+	<definition name="productInventory" extends="base">
+		<put-attribute name="title" value="productInventory Page :J" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/productInventory.jsp" />
+	</definition>
+
+	<definition name="addProduct" extends="base">
+		<put-attribute name="title" value="addProduct Page :J" />
+		<put-attribute name="body" value="/WEB-INF/views/addProduct.jsp" />
+	</definition>
+
+	<definition name="updateProduct" extends="base">
+		<put-attribute name="title" value="updateProduct Page :J" />
+		<put-attribute name="body" value="/WEB-INF/views/updateProduct.jsp" />
+	</definition>
+
+	<definition name="login" extends="base">
+		<put-attribute name="title" value="Login Page :>" />
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>
+
+	<definition name="viewProduct" extends="base">
+		<put-attribute name="title" value="viewProduct Page :O" />
+		<put-attribute name="body" value="/WEB-INF/views/viewProduct.jsp" />
+	</definition>
+
+	<definition name="registerUser" extends="base">
+		<put-attribute name="title" expression="Registeration Page" />
+		<put-attribute name="body" value="/WEB-INF/views/registerUser.jsp" />
+	</definition>
+
+	<definition name="registerUserSuccess" extends="base">
+		<put-attribute name="title" expression="Registeration Success Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/registerUserSuccess.jsp" />
+	</definition>
+
+	<definition name="cart" extends="base">
+		<put-attribute name="title" expression="Cart information Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/cart.jsp" />
+	</definition>
+
+
+
+</tiles-definitions>
